@@ -1,0 +1,210 @@
+
+
+
+/* 
+COLOR CODES
+dark green - #1C2A2C
+footer dark - #24282B
+
+FONTS
+font-family: 'Raleway', sans-serif;
+font-weight: 300,400,900;
+
+*/
+
+
+/* CSS Reset */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Temporary Styles */
+
+/* *{
+    padding: 0.5rem;
+    border: 1px solid rgb(200, 200, 200);
+} */
+
+/* h1, h2, h3, h4, h5, h6, a, p{
+    border: 2px solid rgb(58, 138, 138)
+} */
+
+/* html, 
+body {
+    border:none;
+} */
+
+
+/* End Temporary Styles */
+
+
+/* Utility Classes */
+
+.tall-30        {min-height: 30vh;}
+.tall-40        {min-height: 40vh;}
+.tall-50        {min-height: 50vh;}
+.tall-60        {min-height: 60vh;}
+.tall-70        {min-height: 70vh;}
+.tall-80        {min-height: 80vh;}
+.tall-90        {min-height: 90vh;}
+
+.padded         {padding: 5%;}
+.padded-lg      {padding: 10% 5%;}
+.padded-1       {padding: 1rem;}
+.padded-2       {padding: 2rem;}
+
+.margin-b-0     {margin-bottom:0;}
+
+.bg-featured    {background-color: #1C2A2C;}
+.bg-dark        {background-color: #24282B;}
+
+.light-text     {color:white;}
+
+.left           {text-align: left;}
+.center         {text-align: center;}
+.right          {text-align: right;}
+
+
+/* Typography */
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+   font-weight: 900;
+   text-transform: uppercase;
+   margin-bottom: 0.5rem;
+
+}
+
+p, li{
+    font-weight: 300;
+    line-height: 1.4;
+    margin-bottom: 0.8rem;
+}
+
+p:last-child,
+li:last-child {
+    margin-bottom: 0;
+}
+
+h1{
+    font-size: 8rem;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+h3{
+    font-size: 1.8rem;
+}
+
+a{
+    color: inherit;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #4e91ed;
+}
+
+.fab{
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    transition: all 0.2s;
+}
+
+.not-bold {font-weight: 400;}
+.subtle   {
+    opacity: 0.8;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* Footer */
+
+footer h2{
+    font-size: 5rem;
+    line-height: 1;
+}
+
+footer p{
+    margin-bottom: 0.2rem;
+}
+
+
+
+/* Background images */
+
+.bg-image{
+    background-color: #24282B;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('/images/hotel-image4.jpg');
+}
+
+.bg-roof{
+    background-image: url('/images/hotel-image6.jpg');
+}
+
+.bg-bed{
+    background-image: url('/images/hotel-image2.jpg');
+}
+
+.bg-hallway{
+    background-image: url('/images/hotel-image4.jpg');
+}
+
+.bg-lounge{
+    background-image: url('/images/hotel-image5.jpg');
+}
+
+.bg-lounge2{
+    background-image: url('/images/hotel-image3.jpg');
+}
+
+.bg-sheets{
+    background-image: url('/images/hotel-image8.jpg');
+}
+
+.bg-map{
+    background-image: url('/images/hotel-image7.png');
+}
+
+.social-banner{
+    background-position: 50% 27%;
+}
+
+
+/* SM: max-width in pixels approximately 768px*/
+@media(max-width: 48em) {
+    .hide-sm{display:none;}
+
+    .flex-flip-sm{flex-direction: column-reverse;}
+
+    h1{
+        font-size: 4rem;
+    }
+
+    footer h2{
+        font-size: 2.5rem;
+    }
+
+    .social-banner{
+        background-image: none;
+        background-color:#1C2A2C ;
+    }
+
+    .bg-map{
+        min-height: 20vh;
+    }
+}
